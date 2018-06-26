@@ -1,0 +1,1 @@
+window.defaultDelay = 9000;

@@ -1,0 +1,37 @@
+body {
+  font-family: ralewayregular, sans-serif; }
+
+.showAfter10Secs {
+  animation-name: showUpKeyframe;
+  animation-delay: 9s;
+  animation-duration: 1s;
+  visibility: hidden;
+  opacity: 0;
+  animation-fill-mode: forwards; }
+
+.hidden {
+  display: none; }
+
+@keyframes showUpKeyframe {
+  0% {
+    visibility: hidden;
+    opacity: 0; }
+  100% {
+    visibility: visible;
+    opacity: 1; } }
+
+@keyframes spin {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0); }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg); } }
+
+.neon {
+  color: #fff;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #212529, 0 0 80px #212529, 0 0 90px #212529; }
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0); }
+  100% {
+    transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg); } }

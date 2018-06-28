@@ -11,11 +11,11 @@ class Dodecahedron extends React.Component {
             E
           </div>
           <div className="plane main">
-            <div className="circle"></div>
-            <div className="circle"></div>
-            <div className="circle"></div>
-            <div className="circle"></div>
-            <div className="circle"></div>
+            <div className="circle"/>
+            <div className="circle"/>
+            <div className="circle"/>
+            <div className="circle"/>
+            <div className="circle"/>
           </div>
         </div>
       </div>

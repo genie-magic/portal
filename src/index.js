@@ -10,6 +10,7 @@ import './global.css';
 import './assets/fonts/font-awesome/css/font-awesome.min.css';
 import './assets/fonts/roboto/roboto.css';
 import './assets/fonts/raleway/stylesheet.css';
+import './animate.css';
 
 const target = document.querySelector('#root');
 

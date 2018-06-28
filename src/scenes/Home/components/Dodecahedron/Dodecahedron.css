@@ -2,7 +2,6 @@
   position: absolute;
   width: 150px;
   top: 140px;
-  left: 100px;
   opacity: 0.7;
   display: flex;
   justify-content: right;
@@ -66,7 +65,8 @@
         border-radius: 100%;
         background: #04c2c9;
         box-sizing: border-box;
-        box-shadow: 0 0 60px 2px #04c2c9; }
+        box-shadow: 0 0 60px 2px #04c2c9;
+        display: none; }
       .dodecahedron-container .plane .circle:before {
         transform: translateZ(-170px); }
       .dodecahedron-container .plane .circle::after {

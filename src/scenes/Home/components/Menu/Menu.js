@@ -18,7 +18,7 @@ class Menu extends React.Component {
   }
 
   checkMenu() {
-    const offset = 300;
+    const offset = 1100;
     if (window.scrollY > offset && !this.stNav.classList.contains('is-fixed')) {
       this.setState({ bShowMenu: true });
     } else if (window.scrollY <= offset) {
@@ -56,111 +56,114 @@ class Menu extends React.Component {
     }
 
     return (
-      <div
-        id="st-nav"
-        ref={stNav => {
-          this.stNav = stNav;
-        }}
-        className={stNav}
-      >
-        <a className={navTrigger} onClick={this.onClickMenu}>
-          Menu<span> </span>
-        </a>
-
-        <nav
-          id="st-main-nav"
-          ref={stMainNav => {
-            this.stMainNav = stMainNav;
+      <React.Fragment>
+        <span className="skype-button bubble skype-button-position" data-contact-id="live:eric.lee6174"></span>
+        <div
+          id="st-nav"
+          ref={stNav => {
+            this.stNav = stNav;
           }}
+          className={stNav}
         >
-          <div className="navUIContainer">
-            <ul
-              ref={navUl => {
-                this.navUl = navUl;
-              }}
-              className={navUI}
-            >
-              <li>
-                <Link
-                  to="home-section"
-                  className="page-scroll hvr-underline-from-center"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="benefit-section"
-                  className="page-scroll hvr-underline-from-center"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Benefits
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="explore-section"
-                  className="page-scroll hvr-underline-from-center"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Statistics
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="network-section"
-                  className="page-scroll hvr-underline-from-center"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Network
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="roadmap-section"
-                  className="page-scroll hvr-underline-from-center"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Roadmap
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="team-section"
-                  className="page-scroll hvr-underline-from-center"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Team
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="contact-section"
-                  className="page-scroll hvr-underline-from-center"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
-                >
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
+          <a className={navTrigger} onClick={this.onClickMenu}>
+            Menu<span> </span>
+          </a>
+
+          <nav
+            id="st-main-nav"
+            ref={stMainNav => {
+              this.stMainNav = stMainNav;
+            }}
+          >
+            <div className="navUIContainer">
+              <ul
+                ref={navUl => {
+                  this.navUl = navUl;
+                }}
+                className={navUI}
+              >
+                <li>
+                  <Link
+                    to="home-section"
+                    className="page-scroll hvr-underline-from-center"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="benefit-section"
+                    className="page-scroll hvr-underline-from-center"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Benefits
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="explore-section"
+                    className="page-scroll hvr-underline-from-center"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Statistics
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="network-section"
+                    className="page-scroll hvr-underline-from-center"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Network
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="roadmap-section"
+                    className="page-scroll hvr-underline-from-center"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Roadmap
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="team-section"
+                    className="page-scroll hvr-underline-from-center"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Team
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="contact-section"
+                    className="page-scroll hvr-underline-from-center"
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    Contact
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </React.Fragment>
     );
   }
 }

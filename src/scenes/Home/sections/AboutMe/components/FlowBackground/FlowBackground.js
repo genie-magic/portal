@@ -4,9 +4,14 @@ import './FlowBackground.css';
 class FlowBackground extends React.Component {
   render() {
     return (
-      <div className="flow-background">
-        {this.props.children}
+      <div className="flow-background-container">
+        <div id="flow-background" className="flow-background" ref={(ref)=> this.containerDiv = ref }>
+        </div>
+        <div className="children-container">
+          {this.props.children}
+        </div>
       </div>
+
     )
   }
 }

@@ -1,7 +1,23 @@
 body {
   font-family: ralewayregular, sans-serif;
 }
+.skype-button-position {
+  position: fixed !important;
+  left: 20px;
+  bottom: 40px;
+  z-index: 9999;
+  .lwc-chat-button {
+    position: relative;
+    right: unset;
+    left: 20px;
+  }
+}
 
+.lwc-chat-frame {
+  z-index: 9999;
+  left:20px !important;
+  right: unset !important;
+}
 .showAfter10Secs {
   animation-name: showUpKeyframe;
   animation-delay: 9s;
@@ -46,11 +62,39 @@ body {
           0 0 90px #212529;
 }
 
+.gree-neon {
+  color: #fff;
+  box-shadow:
+          0 0 5px #fff,
+          0 0 10px #2DA94F;
+
+  &:hover {
+    box-shadow:
+            0 0 5px #fff,
+            0 0 10px #E31B6D;
+  }
+}
+
 @keyframes rotate {
   0% {
     transform: rotateX(0) rotateY(0) rotateZ(0)
   }
   100% {
     transform: rotateX(0deg) rotateY(360deg) rotateZ(0deg)
+  }
+}
+
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+    transform: translateY(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0 rgba(0,0,0,0.2);
+    transform: translateY(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.6);
+    transform: translateY(0px);
   }
 }

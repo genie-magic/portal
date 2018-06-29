@@ -2,10 +2,36 @@ import React from 'react';
 import { Link } from 'react-scroll';
 import './Footer.css';
 
+const defaultDelay = window.defaultDelay;
+
 class Footer extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      bShow: false
+    };
+
+    this.showComponent = this.showComponent.bind(this);
+  }
+
+  showComponent() {
+    this.setState({
+      bShow: true
+    });
+  }
+
+  componentDidMount() {
+    setTimeout(this.showComponent, defaultDelay);
+  }
+
   render() {
+    let hideOrShow = 'hidden';
+    if (this.state.bShow === true) {
+      hideOrShow = '';
+    }
+
     return (
-      <div className="footer-section">
+      <div className={['footer-section', hideOrShow].join(' ')}>
         <div className="move-top-container">
           <Link
             className="move-top"

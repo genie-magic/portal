@@ -6,6 +6,8 @@ import { postSendEmail } from '../../../../modules/mail/mailAction';
 import { Element } from 'react-scroll';
 import './Contact.css';
 
+const defaultDelay = window.defaultDelay;
+
 class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -13,14 +15,27 @@ class Contact extends React.Component {
       email: '',
       name: '',
       subject: '',
-      mailbody: ''
+      mailbody: '',
+      bShow: false
     };
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleChangeEmail = this.handleChangeEmail.bind(this);
     this.handleChangeName = this.handleChangeName.bind(this);
     this.handleChangeSubject = this.handleChangeSubject.bind(this);
     this.handleChangeMailBody = this.handleChangeMailBody.bind(this);
+    this.showComponent = this.showComponent.bind(this);
   }
+
+  showComponent() {
+    this.setState({
+      bShow: true
+    });
+  }
+
+  componentDidMount() {
+    setTimeout(this.showComponent, defaultDelay);
+  }
+
   handleChangeEmail(event) {
     this.setState({
       email: event.target.value
@@ -65,12 +80,20 @@ class Contact extends React.Component {
     if (this.props.success !== true) {
       messageClass = 'message hide';
     }
+    let hideOrShow = 'hidden';
+    if (this.state.bShow === true) {
+      hideOrShow = '';
+    }
+
     return (
-      <Element id="contact-section" className="contact-section">
+      <Element
+        id="contact-section"
+        className={['contact-section', hideOrShow].join(' ')}
+      >
         <Container>
           <div className="title wow bounceInLeft animated">Contact</div>
           <div className="title-bar wow bounceInLeft animated" />
-          <Row>
+          <Row className="fadeIn wow animated">
             <Col md={{ size: 6, offset: 3 }} xs="12">
               <Form onSubmit={this.handleSubmit}>
                 <Input
@@ -111,7 +134,10 @@ class Contact extends React.Component {
                   <span className="fa fa-check" />Your message was sent, thank
                   you!
                 </div>
-                <Input type="submit" className="submit-button">
+                <Input
+                  type="submit"
+                  className="submit-button bounceInRight wow animated"
+                >
                   Submit
                 </Input>
               </Form>

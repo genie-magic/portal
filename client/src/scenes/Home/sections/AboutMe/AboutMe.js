@@ -17,7 +17,7 @@ class AboutMe extends React.Component {
     super(props);
 
     this.state = {
-      bShow: true
+      bShow: false
     };
     this.showComponent = this.showComponent.bind(this);
     this.startSkypeChat = this.startSkypeChat.bind(this);
@@ -45,7 +45,7 @@ class AboutMe extends React.Component {
   }
   render() {
     let hideOrShow = 'hidden';
-    if (this.state.bShow == true) {
+    if (this.state.bShow === true) {
       hideOrShow = '';
     }
     return (
@@ -60,14 +60,14 @@ class AboutMe extends React.Component {
             <Row>
               <Col lg="6" xs="12">
                 <Row>
-                  <Col sm="6" xs="12">
+                  <Col sm="6" xs="12" className="fadeIn animated wow">
                     <Bullet
                       iconName="fa-handshake-o"
                       title="Communicative"
                       description="Communication - the human connection - is the key to personal and career success."
                     />
                   </Col>
-                  <Col sm="6" xs="12">
+                  <Col sm="6" xs="12" className="fadeIn animated wow">
                     <Bullet
                       iconName="fa-lightbulb-o"
                       title="Creative"
@@ -78,14 +78,14 @@ class AboutMe extends React.Component {
               </Col>
               <Col lg="6" xs="12">
                 <Row>
-                  <Col sm="6" xs="12">
+                  <Col sm="6" xs="12" className="fadeIn animated wow">
                     <Bullet
                       iconName="fa-clock-o"
                       title="Punctuality"
                       description="It is difficult to prove myself reliable when people are required to wait for me."
                     />
                   </Col>
-                  <Col sm="6" xs="12">
+                  <Col sm="6" xs="12" className="fadeIn animated wow">
                     <Bullet
                       iconName="fa-calendar-check-o"
                       title="Organized"

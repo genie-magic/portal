@@ -4,6 +4,7 @@ import { Element } from 'react-scroll';
 import PhotoGrid from './components/PhotoGrid/PhotoGrid';
 import './Projects.css';
 
+const wowInit = window.wowInit;
 const defaultDelay = window.defaultDelay;
 
 class Projects extends React.Component {
@@ -22,6 +23,7 @@ class Projects extends React.Component {
       bShow: true
     });
     window.dispatchEvent(new Event('resize'));
+    wowInit();
   }
 
   componentDidMount() {

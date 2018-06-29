@@ -1,0 +1,27 @@
+.home-section {
+  background-color: #262b2e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height:900px;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  .Aligner-item {
+    @media only screen and (min-width: 991px) {
+      max-width: 50%;
+    }
+    width: 100%;
+    min-height: 1px;
+  }
+
+  .Aligner-item--top {
+    align-self: flex-start;
+  }
+
+  .Aligner-item--bottom {
+    align-self: flex-end;
+  }
+}

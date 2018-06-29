@@ -1,0 +1,55 @@
+.footer-section {
+  padding: 50px 0 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #262b2e;
+  flex-direction: column;
+  position: relative;
+}
+.footer-section .connect-me {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-section .connect-me .social-icon {
+  margin: 0 20px;
+  color: white;
+}
+.footer-section .connect-me .social-icon:hover {
+  color: #04c2c9;
+}
+.footer-section .connect-me .social-icon span {
+  font-size: 2em;
+  cursor: pointer;
+}
+.footer-section .copyright {
+  display: flex;
+  color: #8f9aa7;
+  font-size: 0.9em;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer-section .copyright .year {
+  color: #e31b6d;
+  margin-left: 0.5em;
+}
+.footer-section .move-top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -1.4em;
+}
+.footer-section .move-top-container .move-top {
+  background-color: #e31b6d;
+  color: white;
+  padding: 8px 8px;
+}
+.footer-section .move-top-container .move-top:hover {
+  cursor: pointer;
+  color: white;
+}
+.footer-section .move-top-container .move-top span {
+  font-size: 2.4em;
+}

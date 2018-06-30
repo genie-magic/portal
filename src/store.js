@@ -4,7 +4,7 @@ import createSagaMiddleware from 'redux-saga';
 import createHistory from 'history/createBrowserHistory';
 import rootReducer from './modules/reducer';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { blockExplorerSubscriber } from './modules/blockExplorer/blockExplorerSaga';
+import { mailSubscriber } from './modules/mail/mailSaga';
 
 export const history = createHistory();
 
@@ -25,6 +25,6 @@ const composedEnhancers = compose(applyMiddleware(...middleware), ...enhancers);
 
 const store = createStore(rootReducer, initialState, composedEnhancers);
 
-sagaMiddleware.run(blockExplorerSubscriber);
+sagaMiddleware.run(mailSubscriber);
 
 export default store;

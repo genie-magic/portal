@@ -8,16 +8,12 @@ class Bullet extends React.Component {
     return (
       <div className="bullet fadeIn wow animated">
         <div className="circle-container">
-          <i className={iconClass}/>
+          <i className={iconClass} />
         </div>
-        <div className="bullet-title">
-          {this.props.title}
-        </div>
-        <div className="bullet-description">
-          {this.props.description}
-        </div>
+        <div className="bullet-title">{this.props.title}</div>
+        <div className="bullet-description">{this.props.description}</div>
       </div>
-    )
+    );
   }
 }
 

@@ -2,22 +2,28 @@ import React from 'react';
 import './PhotoGridFilter.css';
 
 const filterOptions = [
-  { id: 1, label: 'ALL', filterValue: 'all'},
-  { id: 2, label: 'NODEJS', filterValue: 'nodejs'},
-  { id: 3, label: 'JAVASCRIPT', filterValue: 'javascript'},
-  { id: 4, label: 'PHP', filterValue: 'php'},
-  { id: 5, label: 'RUBY/RAILS', filterValue: 'ruby'},
+  { id: 1, label: 'ALL', filterValue: 'all' },
+  { id: 2, label: 'NODEJS', filterValue: 'nodejs' },
+  { id: 3, label: 'JAVASCRIPT', filterValue: 'javascript' },
+  { id: 4, label: 'PHP', filterValue: 'php' },
+  { id: 5, label: 'RUBY/RAILS', filterValue: 'ruby' }
 ];
 
-function FilterOption({id, label, filterValue, selected, handleClick}) {
-
+function FilterOption({ id, label, filterValue, selected, handleClick }) {
   let classString = 'filter-option';
   if (selected === true) {
     classString = 'filter-option selected';
   }
 
-  return(
-    <a key={id} id={id} className={classString} onClick={()=>{handleClick(filterValue)}}>
+  return (
+    <a
+      key={id}
+      id={id}
+      className={classString}
+      onClick={() => {
+        handleClick(filterValue);
+      }}
+    >
       {label}
     </a>
   );
@@ -26,8 +32,8 @@ function FilterOption({id, label, filterValue, selected, handleClick}) {
 class PhotoGridFilter extends React.Component {
   constructor(props) {
     super(props);
-    this.state= {
-      selected:'all'
+    this.state = {
+      selected: 'all'
     };
     this.handleFilterClick = this.handleFilterClick.bind(this);
   }
@@ -36,20 +42,24 @@ class PhotoGridFilter extends React.Component {
     this.shuffle = window.projectShuffleContainer;
     this.shuffle.filter(filterValue);
     this.setState({
-      selected:filterValue
+      selected: filterValue
     });
   }
   render() {
     return (
       <div className="photo-filter-container">
-        {
-          filterOptions.map((option)=>{
-            let selected = option.filterValue === this.state.selected;
-            return(
-              <FilterOption id={option.id} label={option.label} filterValue={option.filterValue} selected={selected} handleClick={this.handleFilterClick}/>
-            );
-          })
-        }
+        {filterOptions.map(option => {
+          let selected = option.filterValue === this.state.selected;
+          return (
+            <FilterOption
+              id={option.id}
+              label={option.label}
+              filterValue={option.filterValue}
+              selected={selected}
+              handleClick={this.handleFilterClick}
+            />
+          );
+        })}
       </div>
     );
   }

@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 import { routerReducer } from 'react-router-redux';
-import blockExplorerReducer from './blockExplorer/blockExplorerReducer';
+
+import mailReducer from './mail/mailReducer';
 
 export default combineReducers({
   routing: routerReducer,
-  blockExplorer: blockExplorerReducer
+  mail: mailReducer
 });

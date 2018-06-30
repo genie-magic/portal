@@ -5,16 +5,15 @@ import './Skill.css';
 class Skill extends React.Component {
   render() {
     const fillStyle = {
-      width: this.props.rate+'%'
+      width: this.props.rate + '%'
     };
     return (
       <div className="skill">
         <div className="tag">{this.props.label}</div>
-        <div className="fill wow slideInLeft animated" style={fillStyle}>
-        </div>
+        <div className="fill wow slideInLeft animated" style={fillStyle} />
         <span>{this.props.rate}%</span>
       </div>
-    )
+    );
   }
 }
 Skill.propTypes = {

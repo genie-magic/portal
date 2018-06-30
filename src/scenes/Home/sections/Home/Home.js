@@ -6,20 +6,19 @@ import BubbleBackground from './components/BubbleBackground/BubbleBackground';
 import Welcome from './components/Welcome/Welcome';
 import Menu from '../../components/Menu/Menu';
 import './Home.css';
-import Dodecahedron from "../../components/Dodecahedron/Dodecahedron";
-
+import Dodecahedron from '../../components/Dodecahedron/Dodecahedron';
 
 class Home extends React.Component {
   render() {
-    return(
+    return (
       <Element id="home-section" className="home-section">
         <BubbleBackground>
           <Container>
-            <Welcome/>
-            <Dodecahedron/>
+            <Welcome />
+            <Dodecahedron />
           </Container>
         </BubbleBackground>
-        <Menu/>
+        <Menu />
       </Element>
     );
   }

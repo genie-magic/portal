@@ -90,6 +90,14 @@
     .decorate {
       //text-decoration: underline;
       color: #E31B6D;
+
+      &.page-scroll {
+        cursor: pointer;
+
+        &:hover {
+          color:#E31B6D ;
+        }
+      }
     }
 
     .reach-out-me {
@@ -100,26 +108,25 @@
 
   .about-me-section {
     padding-top: 50px;
+    .connect-me {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      margin-top: 40px;
+      .social-icon {
+        margin: 0 20px;
+        color: #212529;
+
+        span {
+          font-size: 2.5em;
+          cursor: pointer;
+        }
+      }
+    }
   }
 
   .skills-container {
     margin-top: 30px;
-  }
-
-  .connect-me {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 40px;
-    .social-icon {
-      margin: 0 20px;
-      color: #212529;
-
-      span {
-        font-size: 2.5em;
-        cursor: pointer;
-      }
-    }
   }
 }

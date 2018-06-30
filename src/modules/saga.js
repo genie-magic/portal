@@ -1,3 +1,3 @@
-import { blockExplorerSubscriber } from './blockExplorer/blockExplorerSaga';
+import { mailSubscriber } from './mail/mailSaga';
 
-export { blockExplorerSubscriber };
+export { mailSubscriber };

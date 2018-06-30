@@ -7,19 +7,17 @@ class Dodecahedron extends React.Component {
     return (
       <div className="dodecahedron-container showAfter10Secs">
         <div className="view">
-          <div className="LetterE neon">
-            E
-          </div>
+          <div className="LetterE neon">E</div>
           <div className="plane main">
-            <div className="circle"/>
-            <div className="circle"/>
-            <div className="circle"/>
-            <div className="circle"/>
-            <div className="circle"/>
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
+            <div className="circle" />
           </div>
         </div>
       </div>
-    )
+    );
   }
 }
 

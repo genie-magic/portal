@@ -17,6 +17,7 @@
     "react-parallax": "^1.7.0",
     "react-progressbar": "^15.4.1",
     "react-redux": "^5.0.7",
+    "react-responsive-carousel": "^3.1.41",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.9",
     "react-scripts": "1.1.4",
@@ -46,5 +47,6 @@
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  }
+  },
+  "proxy": "http://localhost:5000/"
 }

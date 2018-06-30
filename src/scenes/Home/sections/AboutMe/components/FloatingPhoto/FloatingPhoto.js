@@ -7,11 +7,11 @@ class FloatingPhoto extends React.Component {
     return (
       <div className="floating-photo">
         <a>
-          <img src={me} alt="ME"/>
+          <img src={me} alt="ME" />
         </a>
       </div>
-    )
+    );
   }
-};
+}
 
 export default FloatingPhoto;

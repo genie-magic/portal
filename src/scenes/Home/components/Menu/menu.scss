@@ -4,6 +4,7 @@
     font-weight: lighter;
     text-transform: uppercase;
     transition: color .5s;
+    font-size: 0.95em;
   }
 
   ul {
@@ -296,7 +297,7 @@
 
 @media only screen and (min-width: 992px) {
   #st-nav ul {
-    padding-left: 0;
+    padding-left: 100px;
     background: #1B242F !important;
     border-bottom: 3px solid #04C2C9;
     text-align: left;

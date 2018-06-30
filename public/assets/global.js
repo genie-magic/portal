@@ -101,5 +101,11 @@ function update(){
 window.update = update;
 
 $(function(){
-  new WOW().init();
+  //new WOW().init();
 });
+
+function wowInit() {
+  new WOW().init();
+}
+
+window.wowInit = wowInit;

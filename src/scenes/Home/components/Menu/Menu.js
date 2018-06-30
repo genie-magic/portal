@@ -57,7 +57,10 @@ class Menu extends React.Component {
 
     return (
       <React.Fragment>
-        <span className="skype-button bubble skype-button-position" data-contact-id="live:eric.lee6174"></span>
+        <span
+          className="skype-button bubble skype-button-position showAfter10Secs"
+          data-contact-id="live:eric.lee6174"
+        />
         <div
           id="st-nav"
           ref={stNav => {
@@ -95,57 +98,24 @@ class Menu extends React.Component {
                 </li>
                 <li>
                   <Link
-                    to="benefit-section"
+                    to="about-section"
                     className="page-scroll hvr-underline-from-center"
                     spy={true}
                     smooth={true}
                     duration={500}
                   >
-                    Benefits
+                    About Me
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to="explore-section"
+                    to="projects-section"
                     className="page-scroll hvr-underline-from-center"
                     spy={true}
                     smooth={true}
                     duration={500}
                   >
-                    Statistics
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="network-section"
-                    className="page-scroll hvr-underline-from-center"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Network
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="roadmap-section"
-                    className="page-scroll hvr-underline-from-center"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Roadmap
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="team-section"
-                    className="page-scroll hvr-underline-from-center"
-                    spy={true}
-                    smooth={true}
-                    duration={500}
-                  >
-                    Team
+                    Projects
                   </Link>
                 </li>
                 <li>

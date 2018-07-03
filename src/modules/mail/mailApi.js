@@ -7,6 +7,7 @@ const postMailRequest = wrapRequest(async mailData =>
       Accept: 'application/json',
       'Content-Type': 'application/json'
     },
+    mode: 'cors',
     method: 'POST' // *GET, POST, PUT, DELETE, etc.
   })
 );

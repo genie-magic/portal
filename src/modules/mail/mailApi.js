@@ -4,7 +4,8 @@ const postMailRequest = wrapRequest(async mailData =>
   fetch('http://localhost:5000/api/mail', {
     body: JSON.stringify(mailData), // must match 'Content-Type' header
     headers: {
-      'content-type': 'application/json'
+      Accept: 'application/json',
+      'Content-Type': 'application/json'
     },
     method: 'POST' // *GET, POST, PUT, DELETE, etc.
   })

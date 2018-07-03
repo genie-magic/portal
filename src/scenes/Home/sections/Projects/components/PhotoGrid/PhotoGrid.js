@@ -216,7 +216,7 @@ class PhotoGrid extends React.Component {
       <React.Fragment>
         <PhotoGridFilter />
         <div
-          className="row my-shuffle-container shuffle fadeIn wow animated"
+          className="row my-shuffle-container shuffle"
           ref={ref => (this.element = ref)}
         >
           {projects.map(project => (

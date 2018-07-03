@@ -75,6 +75,7 @@ class Contact extends React.Component {
   render() {
     let messageText = 'Your message was sent, thank you!';
     let messageClass = 'message';
+    let messageIcon = 'fa fa-check';
     if (this.props.loading === true) {
       messageClass = 'message hide';
     }
@@ -85,6 +86,7 @@ class Contact extends React.Component {
     if (this.props.success === false && this.props.failed === true) {
       messageClass = 'message failed';
       messageText = 'Your message is not delivered. Please try again. Thanks!';
+      messageIcon = 'fa fa-exclamation-triangle';
     }
     let hideOrShow = 'hidden';
     if (this.state.bShow === true) {
@@ -137,7 +139,7 @@ class Contact extends React.Component {
                   onChange={this.handleChangeMailBody}
                 />
                 <div className={messageClass}>
-                  <span className="fa fa-check" />
+                  <span className={messageIcon} />
                   {messageText}
                 </div>
                 <Input

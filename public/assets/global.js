@@ -1,4 +1,4 @@
-window.defaultDelay = 9000;
+window.defaultDelay = 4000;
 
 class Particle{
 

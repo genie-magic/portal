@@ -465,7 +465,7 @@
 
 #st-nav {
   animation-name: showUpKeyframe;
-  animation-delay: 9s;
+  animation-delay: 4s;
   animation-duration: 1s;
   visibility: hidden;
   opacity: 0;

@@ -127,17 +127,6 @@ class AboutMe extends React.Component {
                   <a
                     className="social-icon"
                     target="_blank"
-                    href="https://github.com/tiny-tinker"
-                  >
-                    {' '}
-                    <span className="fa fa-github" />{' '}
-                  </a>
-                  <a className="social-icon" onClick={this.startSkypeChat}>
-                    <span className="fa fa-skype" />
-                  </a>
-                  <a
-                    className="social-icon"
-                    target="_blank"
                     href="https://www.facebook.com/confirmcontact.php?c=96312&z=0&gfid=AQDUEXSBh3yo6Lvw"
                   >
                     {' '}
@@ -150,6 +139,17 @@ class AboutMe extends React.Component {
                   >
                     {' '}
                     <span className="fa fa-facebook" />{' '}
+                  </a>
+                  <a
+                    className="social-icon"
+                    target="_blank"
+                    href="https://github.com/tiny-tinker"
+                  >
+                    {' '}
+                    <span className="fa fa-github" />{' '}
+                  </a>
+                  <a className="social-icon" onClick={this.startSkypeChat}>
+                    <span className="fa fa-skype" />
                   </a>
                   <a
                     className="social-icon"

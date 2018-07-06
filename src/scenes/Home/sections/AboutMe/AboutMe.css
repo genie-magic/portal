@@ -101,6 +101,8 @@
   font-size: 2.5em;
   cursor: pointer;
 }
-.about-me .skills-container {
-  margin-top: 30px;
+@media only screen and (max-width: 992px) {
+  .about-me .skills-container {
+    margin-top: 30px;
+  }
 }

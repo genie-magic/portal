@@ -127,7 +127,7 @@ class AboutMe extends React.Component {
                   <a
                     className="social-icon"
                     target="_blank"
-                    href="https://www.facebook.com/confirmcontact.php?c=96312&z=0&gfid=AQDUEXSBh3yo6Lvw"
+                    href="https://www.linkedin.com/in/eric-lee-451328138"
                   >
                     {' '}
                     <span className="fa fa-linkedin" />{' '}

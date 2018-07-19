@@ -131,4 +131,15 @@
       margin-top: 30px;
     }
   }
+
+  #curveUpColor {
+    position: absolute;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    fill: #262b2e;
+    stroke: #262b2e;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+  }
 }

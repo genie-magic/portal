@@ -32,6 +32,7 @@ class Footer extends React.Component {
 
     return (
       <div className={['footer-section', hideOrShow].join(' ')}>
+        <div className="diagonal-shadow" />
         <div className="move-top-container">
           <Link
             className="move-top"

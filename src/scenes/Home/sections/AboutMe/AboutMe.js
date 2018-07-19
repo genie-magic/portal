@@ -33,7 +33,7 @@ class AboutMe extends React.Component {
   }
   componentDidMount() {
     setTimeout(this.showComponent, defaultDelay);
-    //setTimeout(this.showSVGFlow, defaultDelay + 1000);
+    setTimeout(this.showSVGFlow, defaultDelay + 1000);
     //update();
   }
 

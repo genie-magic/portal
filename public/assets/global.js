@@ -12,7 +12,7 @@ class Particle{
     this.dimensions = this.render();
     this.rotation = Math.random() > 0.5 ? "-" : "+";
     this.scale = 0.5 + Math.random();
-    this.siner = 100 + 200 * Math.random();
+    this.siner = 300 + 200 * Math.random();
   }
 
   destroy(){
@@ -67,7 +67,8 @@ function randomInt(min,max){
   return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-const data = [point, rhombus, pentahedron, circle, x, reactSVG, angularSVG, vueSVG, html5SVG];
+//const data = [point, rhombus, pentahedron, circle, x, reactSVG, angularSVG, vueSVG, html5SVG];
+const data = [point, rhombus, pentahedron, circle, x, reactSVG];
 //const data = [reactSVG, phpSVG];
 
 let isPaused = false, isStartSvg = false;

@@ -18,7 +18,7 @@ class Menu extends React.Component {
   }
 
   checkMenu() {
-    const offset = 1100;
+    const offset = 1000;
     if (window.scrollY > offset && !this.stNav.classList.contains('is-fixed')) {
       this.setState({ bShowMenu: true });
     } else if (window.scrollY <= offset) {

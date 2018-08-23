@@ -9,6 +9,20 @@ import PhotoGridFilter from '../PhotoGridFilter/PhotoGridFilter';
 const Shuffle = window.Shuffle;
 const projects = [
   {
+    id: 3,
+    image: 'oohyah',
+    skills: 'AngularJS + PHP',
+    groups: ['php', 'javascript'],
+    title: 'Oohyah',
+    isVisit: true,
+    imageCounts: 7,
+    titleDetail: 'Oohyah.com',
+    subtitle: 'Music Revalued A Fan Supported Streaming Platform',
+    url: 'https://oohyah.com/',
+    description:
+      'Oohyah is Music Revalued A Fan Supported Streaming Platform. Provide powerful filter search and easy subscription system with millions of popular songs. Used AngularJS for front-end and Laravel5 for back-end.'
+  },
+  {
     id: 0,
     image: 'quillon',
     skills: 'ReactJS + BlockExplore API',
@@ -49,20 +63,6 @@ const projects = [
     url: 'https://www.howtube.com/',
     description:
       'howtube is a video hosting platform that exists to help video creators of all shapes and sizes connect with audiences in the most authentic manner possible and appropriately monetize their content at the same time.'
-  },
-  {
-    id: 3,
-    image: 'oohyah',
-    skills: 'AngularJS + PHP',
-    groups: ['php', 'javascript'],
-    title: 'Oohyah',
-    isVisit: true,
-    imageCounts: 7,
-    titleDetail: 'Oohyah.com',
-    subtitle: 'Music Revalued A Fan Supported Streaming Platform',
-    url: 'https://oohyah.com/',
-    description:
-      'Oohyah is Music Revalued A Fan Supported Streaming Platform. Provide powerful filter search and easy subscription system with millions of popular songs. Used AngularJS for front-end and Laravel5 for back-end.'
   },
   {
     id: 4,
@@ -117,7 +117,7 @@ const projects = [
     url: 'https://www.limologs.com/',
     description:
       'Limo Logs has the ability to track all of your vehicles not just those that are DOT regulated, so when your drivers go from sedan to bus they can simply select their new vehicle. Used Ruby on Rails'
-  },
+  } /*,
   {
     id: 8,
     image: 'airdropalert',
@@ -130,7 +130,7 @@ const projects = [
     url: 'https://airdropalert.com/',
     description:
       'AirdropAlert.com launched June 2017 to create awareness to the crypto community about the existence of airdrops.'
-  }
+  }*/
 ];
 
 function Figure({ id, groups, imageName, title, skills, handleLearnMore }) {

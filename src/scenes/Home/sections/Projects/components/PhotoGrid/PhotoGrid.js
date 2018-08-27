@@ -9,7 +9,7 @@ import PhotoGridFilter from '../PhotoGridFilter/PhotoGridFilter';
 const Shuffle = window.Shuffle;
 const projects = [
   {
-    id: 3,
+    id: 0,
     image: 'oohyah',
     skills: 'AngularJS + PHP',
     groups: ['php', 'javascript'],
@@ -23,7 +23,7 @@ const projects = [
       'Oohyah is Music Revalued A Fan Supported Streaming Platform. Provide powerful filter search and easy subscription system with millions of popular songs. Used AngularJS for front-end and Laravel5 for back-end.'
   },
   {
-    id: 0,
+    id: 1,
     image: 'quillon',
     skills: 'ReactJS + BlockExplore API',
     groups: ['javascript', 'nodejs'],
@@ -37,7 +37,7 @@ const projects = [
       "Quillon Currency Marketing portal. This web portal is connected to the back-end BlockExplorer api. Used ReactJS, Redux, React-Redux, Redux-Sagga packages. I've also developed BlockExplorer"
   },
   {
-    id: 1,
+    id: 2,
     image: 'kindertale',
     skills: 'PHP + Javascript',
     groups: ['php'],
@@ -51,7 +51,7 @@ const projects = [
       'Easy to use childecare management system. Powerful tools for care providers and Parents stay connected to their child from anywhere. Easy online billing, Communication, Very powerful dynamic form builder and CRM are provided. Both android and ios app are ready. Used PHP using own built-in framework'
   },
   {
-    id: 2,
+    id: 3,
     image: 'howtube',
     skills: 'PHP + Javascript',
     groups: ['php'],
@@ -117,7 +117,7 @@ const projects = [
     url: 'https://www.limologs.com/',
     description:
       'Limo Logs has the ability to track all of your vehicles not just those that are DOT regulated, so when your drivers go from sedan to bus they can simply select their new vehicle. Used Ruby on Rails'
-  } /*,
+  } /* ,
   {
     id: 8,
     image: 'airdropalert',

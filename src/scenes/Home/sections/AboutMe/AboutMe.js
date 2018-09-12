@@ -104,10 +104,10 @@ class AboutMe extends React.Component {
                 <div className="photo-title">Who is this guy?</div>
                 <div className="photo-description">
                   I am a young-motivated{' '}
-                  <span className="decorate"> Full Stack Web developer</span>{' '}
-                  with 8+years experience, who consider my self as a
-                  quick-learner and always study new technologies for the best
-                  practice and quality of work.
+                  <span className="decorate"> Full Stack developer</span> with
+                  8+years experience, who consider my self as a quick-learner
+                  and always study new technologies for the best practice and
+                  quality of work.
                   <div className="reach-out-me">
                     If you are someone who loves to make a professional
                     acquaintances,

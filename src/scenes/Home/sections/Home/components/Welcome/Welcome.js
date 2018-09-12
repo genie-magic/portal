@@ -24,7 +24,7 @@ class Welcome extends React.Component {
               Hello, I'm <span className="highlight">Eric Lee</span>
             </span>
             <br />
-            <span className="title">Full-stack web developer</span>
+            <span className="title">Full-stack developer</span>
             <br />
             <span className="quote">
               Code is like humor.

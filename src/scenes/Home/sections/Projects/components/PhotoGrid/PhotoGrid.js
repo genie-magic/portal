@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalBody, ModalFooter } from 'reactstrap';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.css';
 import 'react-responsive-carousel/lib/styles/main.css';
@@ -117,20 +117,31 @@ const projects = [
     url: 'https://www.limologs.com/',
     description:
       'Limo Logs has the ability to track all of your vehicles not just those that are DOT regulated, so when your drivers go from sedan to bus they can simply select their new vehicle. Used Ruby on Rails'
-  } /* ,
+  },
   {
     id: 8,
-    image: 'airdropalert',
-    skills: 'ReactJS + VueJS + NodeJS',
-    groups: ['javascript', 'nodejs'],
-    title: 'Airdropalert',
+    image: 'asyncy',
+    skills: 'Vue.js',
+    groups: ['javascript'],
+    title: 'Asyncy',
     isVisit: true,
     imageCounts: 4,
-    titleDetail: 'AirdropAlert',
-    url: 'https://airdropalert.com/',
+    titleDetail: 'Asyncy Vue Components',
+    url: 'https://storybook.asyncy.com/',
     description:
-      'AirdropAlert.com launched June 2017 to create awareness to the crypto community about the existence of airdrops.'
-  }*/
+      'Vue components that used across multiple websites and applications in asyncy project'
+  },
+  {
+    id: 9,
+    image: 'cardetection',
+    skills: 'Python + Machine Learning + OpenCV',
+    groups: ['machine-learning'],
+    title: 'Car detection',
+    isVisit: false,
+    imageCounts: 1,
+    titleDetail: 'Car detection',
+    description: 'Detect the cars from the image using Yolo model'
+  }
 ];
 
 function Figure({ id, groups, imageName, title, skills, handleLearnMore }) {
@@ -208,7 +219,10 @@ class PhotoGrid extends React.Component {
     for (let index = 0; index < detailModalImageCounts; index++) {
       detailImages.push(
         <div>
-          <img src={'images/projects/' + imagePrefix + '_' + index + '.png'} />
+          <img
+            src={'images/projects/' + imagePrefix + '_' + index + '.png'}
+            alt=""
+          />
         </div>
       );
     }
@@ -249,15 +263,17 @@ class PhotoGrid extends React.Component {
             <div className="description">{description}</div>
           </ModalBody>
           <ModalFooter>
-            <a
-              href={url}
-              className="visit-button"
-              target="_blank"
-              color="primary"
-              onClick={this.toggle}
-            >
-              VISIT SITE
-            </a>{' '}
+            {url && (
+              <a
+                href={url}
+                className="visit-button"
+                target="_blank"
+                color="primary"
+                onClick={this.toggle}
+              >
+                VISIT SITE
+              </a>
+            )}{' '}
             <Button color="secondary" onClick={this.toggle}>
               Close
             </Button>

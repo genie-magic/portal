@@ -130,17 +130,6 @@ const projects = [
     url: 'https://storybook.asyncy.com/',
     description:
       'Vue components that used across multiple websites and applications in asyncy project'
-  },
-  {
-    id: 9,
-    image: 'cardetection',
-    skills: 'Python + Machine Learning + OpenCV',
-    groups: ['machine-learning'],
-    title: 'Car detection',
-    isVisit: false,
-    imageCounts: 1,
-    titleDetail: 'Car detection',
-    description: 'Detect the cars from the image using Yolo model'
   }
 ];
 

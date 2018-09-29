@@ -145,6 +145,7 @@ class Contact extends React.Component {
                 <Input
                   type="submit"
                   className="submit-button bounceInRight wow animated"
+                  value="Submit"
                 >
                   Submit
                 </Input>

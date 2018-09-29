@@ -6,8 +6,7 @@ const filterOptions = [
   { id: 2, label: 'NODEJS', filterValue: 'nodejs' },
   { id: 3, label: 'JAVASCRIPT', filterValue: 'javascript' },
   { id: 4, label: 'PHP', filterValue: 'php' },
-  { id: 5, label: 'RUBY/RAILS', filterValue: 'ruby' },
-  { id: 6, label: 'MACHINE LEARNING', filterValue: 'machine-learning' }
+  { id: 5, label: 'RUBY/RAILS', filterValue: 'ruby' }
 ];
 
 function FilterOption({ id, label, filterValue, selected, handleClick }) {

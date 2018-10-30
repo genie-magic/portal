@@ -143,7 +143,7 @@ class AboutMe extends React.Component {
                   <a
                     className="social-icon"
                     target="_blank"
-                    href="https://github.com/happy-tinker"
+                    href="https://github.com/jafar-magic"
                   >
                     {' '}
                     <span className="fa fa-github" />{' '}

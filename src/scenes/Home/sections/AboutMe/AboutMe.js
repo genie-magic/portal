@@ -10,8 +10,8 @@ import { Link } from 'react-scroll';
 
 const defaultDelay = window.defaultDelay;
 const update = window.update;
-const Skype = window.Skype;
-const SkypeWebControl = window.SkypeWebControl;
+/*const Skype = window.Skype;
+const SkypeWebControl = window.SkypeWebControl;*/
 class AboutMe extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +20,7 @@ class AboutMe extends React.Component {
       bShow: false
     };
     this.showComponent = this.showComponent.bind(this);
-    this.startSkypeChat = this.startSkypeChat.bind(this);
+    //this.startSkypeChat = this.startSkypeChat.bind(this);
   }
 
   showComponent() {
@@ -37,12 +37,14 @@ class AboutMe extends React.Component {
     //update();
   }
 
+  /*
   startSkypeChat() {
     SkypeWebControl.SDK.Chat.startChat({
       ConversationType: 'person',
       ConversationId: 'live:eric.lee6174'
     });
   }
+  */
   render() {
     let hideOrShow = 'hidden';
     if (this.state.bShow === true) {
@@ -148,9 +150,11 @@ class AboutMe extends React.Component {
                     {' '}
                     <span className="fa fa-github" />{' '}
                   </a>
+                  {/*
                   <a className="social-icon" onClick={this.startSkypeChat}>
                     <span className="fa fa-skype" />
                   </a>
+                  */}
                   <a
                     className="social-icon"
                     target="_blank"

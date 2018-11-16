@@ -57,10 +57,11 @@ class Menu extends React.Component {
 
     return (
       <React.Fragment>
+        {/*
         <span
           className="skype-button bubble skype-button-position showAfter10Secs"
           data-contact-id="live:eric.lee6174"
-        />
+    />*/}
         <div
           id="st-nav"
           ref={stNav => {

@@ -69,9 +69,11 @@ class Footer extends React.Component {
             {' '}
             <span className="fa fa-github" />{' '}
           </a>
+          {/*
           <a className="social-icon" onClick={this.startSkypeChat}>
             <span className="fa fa-skype" />
           </a>
+          */}
           <a
             className="social-icon"
             target="_blank"

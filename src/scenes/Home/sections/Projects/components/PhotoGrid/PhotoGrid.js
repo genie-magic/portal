@@ -130,6 +130,19 @@ const projects = [
     url: 'https://storybook.asyncy.com/',
     description:
       'Vue components that used across multiple websites and applications in asyncy project'
+  },
+  {
+    id: 9,
+    image: 'ecr',
+    skills: 'Vue.js + Java',
+    groups: ['javascript', 'Java'],
+    title: 'ECR',
+    isVisit: true,
+    imageCounts: 6,
+    titleDetail: 'ECR - Education Resources Cloud Platform',
+    url: 'http://ecr.teewon.net/ecrweb/home',
+    description:
+      'ECR - Education Resources Cloud Platform - Custom built admin backend, used Elastic search, backend used Java with SQLLite'
   }
 ];
 

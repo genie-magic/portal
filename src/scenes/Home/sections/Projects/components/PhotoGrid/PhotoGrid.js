@@ -135,7 +135,7 @@ const projects = [
     id: 9,
     image: 'ecr',
     skills: 'Vue.js + Java',
-    groups: ['javascript', 'Java'],
+    groups: ['javascript', 'java'],
     title: 'ECR',
     isVisit: true,
     imageCounts: 6,
@@ -143,6 +143,18 @@ const projects = [
     url: 'http://ecr.teewon.net/ecrweb/home',
     description:
       'ECR - Education Resources Cloud Platform - Custom built admin backend, used Elastic search, backend used Java with SQLLite'
+  },
+  {
+    id: 10,
+    image: 'restaurant',
+    skills: 'Dart/Flutter',
+    groups: ['mobile', 'php'],
+    title: 'Restaurant',
+    isVisit: false,
+    imageCounts: 8,
+    titleDetail: 'Restaurant',
+    description:
+      'Restaurant/Meal order app. Built backend rest api using laravel, Admin web app using react.js. Mobile with dart/flutter'
   }
 ];
 

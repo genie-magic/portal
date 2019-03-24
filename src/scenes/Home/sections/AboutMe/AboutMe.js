@@ -178,7 +178,7 @@ class AboutMe extends React.Component {
                   <Skill rate={90} label="PHP" />
                   <Skill rate={85} label="Express.js" />
                   <Skill rate={75} label="Koa.js" />
-                  <Skill rate={50} label="Photoshop" />
+                  <Skill rate={90} label="Dart/Flutter" />
                 </div>
               </Col>
             </Row>

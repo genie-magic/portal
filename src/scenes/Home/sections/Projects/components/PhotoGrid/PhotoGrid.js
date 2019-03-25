@@ -155,6 +155,17 @@ const projects = [
     titleDetail: 'Restaurant',
     description:
       'Restaurant/Meal order app. Built backend rest api using laravel, Admin web app using react.js. Mobile with dart/flutter'
+  },
+  {
+    id: 11,
+    image: 'safetrade',
+    skills: 'Dart/Flutter',
+    groups: ['mobile'],
+    title: 'SafeTrade',
+    isVisit: false,
+    imageCounts: 7,
+    titleDetail: 'Safe Trade App',
+    description: 'A mobile app to track the parcels between buyer and seller'
   }
 ];
 

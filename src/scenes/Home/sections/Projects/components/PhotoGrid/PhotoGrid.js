@@ -166,6 +166,19 @@ const projects = [
     imageCounts: 7,
     titleDetail: 'Safe Trade App',
     description: 'A mobile app to track the parcels between buyer and seller'
+  },
+  {
+    id: 12,
+    image: 'asyncym',
+    skills: 'Nuxt.js',
+    groups: ['javascript'],
+    title: 'Asyncy',
+    isVisit: true,
+    imageCounts: 4,
+    titleDetail: 'Asyncy Marketing Website',
+    url: 'https://www.asyncy.com/',
+    description:
+      'Marketing website for asyncy, built with nuxt.js (SSR framework built on vue.js)'
   }
 ];
 
@@ -227,12 +240,14 @@ class PhotoGrid extends React.Component {
     });
     window.projectShuffleContainer = this.shuffle;
   }
+
   onClickLearnMore(id) {
     this.setState({
       modalDataID: id
     });
     this.toggle();
   }
+
   render() {
     const detailModalImageCounts = projects[this.state.modalDataID].imageCounts;
     const imagePrefix = projects[this.state.modalDataID].image;
